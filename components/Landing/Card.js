@@ -13,7 +13,7 @@ const Card = ({skill}) => {
         <FontAwesomeIcon
           icon={icon}
           size="3x"
-          style={{color: '#FFF'}}
+          style={{color: '#33d8a2'}}
           onClick={() => window.open('https://github.com/Llerena97')}
         />
         <span className="title-card">{info.title}</span>
@@ -31,15 +31,15 @@ const Card = ({skill}) => {
           justify-content: center;
           width: 90%;
           height: auto;
-          border: 2px solid rgba(255,255,255,0.4);
+          background: #FFFFFF;
           border-radius: 0.3rem;
           margin-bottom: 0.5rem;
-          padding: 3rem 1rem;
+          padding: 3rem 2rem;
         }
         .title-card {
           font-family: Nunito;
           font-size: 1.3rem;
-          font-weight: 700;
+          font-weight: 600;
           color: #000000;
           margin-top: 1rem;
           text-align: center;
@@ -50,13 +50,13 @@ const Card = ({skill}) => {
           font-weight: normal;
           color: #000000;
           margin-top: 1rem;
-          text-align: center;
+          text-align: justify;
         }
         .text-stack {
           font-family: Nunito;
           font-size: 1rem;
           font-weight: 600;
-          color: #FFF;
+          color: #33d8a2;
           margin-top: 1.5rem;
           margin-bottom: 1rem;
           text-align: center;
@@ -66,7 +66,7 @@ const Card = ({skill}) => {
           display: flex;
           flex-direction: row;
           align-items: center;
-          justify-content: flex-start;
+          justify-content: center;
           flex-wrap: wrap;
         }
         .item-stack {
@@ -76,7 +76,7 @@ const Card = ({skill}) => {
           color: #000000;
           margin: 0.2rem;
           padding: 0.2rem 0.5rem;
-          background: #FFF;
+          background: #33d8a2;
           text-align: center;
           border-radius: 0.3rem;
           cursor: pointer;

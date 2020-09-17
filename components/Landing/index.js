@@ -267,7 +267,7 @@ const Landing = () => {
           font-family: Nunito;
           font-size: 1.2rem;
           font-weight: 700;
-          color: #FFF;
+          color: #000000;
         }
         .cont-stack {
           width: 100%;
@@ -344,7 +344,7 @@ const Landing = () => {
             width: auto;
           }
           .cont-intro img {
-            width: 20%;
+            width: 25%;
             margin-top: 2rem;
           }
           .sub-intro {
@@ -359,6 +359,7 @@ const Landing = () => {
           }
           .image-map {
             width: 50vw;
+            right: 5rem;
           }
           .cont-info {
             padding: 3% 10%;
