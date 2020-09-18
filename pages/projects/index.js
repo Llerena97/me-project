@@ -1,16 +1,16 @@
 import Head from 'next/head'
-import Landing from '../components/Landing'
-import Header from '../components/Shared/Header'
+import Header from '../../components/Shared/Header'
+import ProjectsView from '../../components/Projects'
 
-const Home = () => {
+const Projects = () => {
   return (
     <>
       <Head>
-        <title>Felipe Llerena | Full Stack Web Developer</title>
+        <title>Felipe Llerena | My Projects</title>
       </Head>
       <div className="main">
         <Header />
-        <Landing />
+        <ProjectsView />
       </div>
       <style jsx>{`
         .main {
@@ -27,4 +27,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Projects
