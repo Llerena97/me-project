@@ -16,7 +16,7 @@ const Header = () => {
           <FontAwesomeIcon
             icon={desplegableMenu ? faTimes : faBars}
             size="2x"
-            color={'#FFFFFF'}
+            color={'#000'}
             onClick={() => setDesplegableMenu(!desplegableMenu)}
           />
         </div>

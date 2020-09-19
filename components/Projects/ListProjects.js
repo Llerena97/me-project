@@ -21,7 +21,7 @@ const ListProjects = () => {
         @media screen and (min-width: 600px) {
           .main {
             flex-direction: row;
-            align-items: center;
+            align-items: flex-start;
             justify-content: flex-start;
             flex-wrap: wrap;
           }

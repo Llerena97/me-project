@@ -40,6 +40,7 @@ const Project = ({project}) => {
         }
         .img-project {
           width: 100%;
+          height: 15rem;
           border-top-left-radius: 1rem;
           border-top-right-radius: 1rem;
         }
@@ -110,6 +111,9 @@ const Project = ({project}) => {
         @media screen and (min-width: 1024px) {
           .main {
             margin: 1rem;
+          }
+          .img-project {
+            height: 13rem;
           }
         }
       `}</style>
