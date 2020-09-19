@@ -299,8 +299,9 @@ const Landing = () => {
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
-            width: 90%;
+            width: 95%;
             height: auto;
+            flex-wrap: wrap;
           }
           .linejump {
             display: none;
@@ -334,6 +335,10 @@ const Landing = () => {
         @media screen and (min-width: 1024px) {
           .cont-presentation {
             height: 90vh;
+          }
+          .cont-cards {
+            width: 90%;
+            flex-wrap: nowrap;
           }
           .cont-intro {
             display: flex;

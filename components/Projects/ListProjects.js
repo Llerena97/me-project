@@ -1,15 +1,12 @@
 import React from 'react';
+import { projects } from '../../lib/projects';
 import Project from './Project';
 
 const ListProjects = () => {
   return (
     <>
       <div className="main">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {projects.map(it => <Project key={it.id} project={it} />)}
       </div>
       <style jsx>{`
         .main {

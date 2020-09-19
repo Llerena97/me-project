@@ -4,18 +4,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Tag from '../Shared/Tag';
 
-import projectImage from './../../assets/img/project-image.jpg'
-
-const Project = () => {
-  let project = {
-    id: 1,
-    img: projectImage,
-    title: 'Project',
-    description: 'I can simultaneously target both iOS and Android to build apps that feel truly native.',
-    tags: ['Javascript', 'React', 'Next JS', 'Ruby', 'Ruby on Rails', 'NodeJS', 'Express.js'],
-    urlWeb: '#',
-    urlHosted: '#',
-  }
+const Project = ({project}) => {
   return (
     <>
       <div className="main">
@@ -28,14 +17,14 @@ const Project = () => {
           </div>
           <hr />
           <div className="cont-urls">
-            <a href={project.urlHosted} className="url" target="_blank">
+            {project.urlHosted && <a href={project.urlHosted} className="url" target="_blank">
               <FontAwesomeIcon icon={faGithub} size="lg" style={{color: '#000', marginRight: '0.5rem'}} />
               <span>Visit on Github</span>
-            </a>
-            <a href={project.urlWeb} className="url" target="_blank">
+            </a>}
+            {project.urlWeb && <a href={project.urlWeb} className="url" target="_blank">
               <FontAwesomeIcon icon={faGlobe} size="lg" style={{color: '#000', marginRight: '0.5rem'}} />
               <span>View App</span>
-            </a>
+            </a>}
           </div>
         </div>
       </div>

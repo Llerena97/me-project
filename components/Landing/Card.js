@@ -83,12 +83,15 @@ const Card = ({skill}) => {
         }
         @media screen and (min-width: 600px) {
           .main {
-            width: 33%;
-            margin: 0;
+            width: 48%;
           }
-
         }
         @media screen and (min-width: 1024px) {
+          .main {
+            width: 33%;
+            height: 28rem;
+            margin: 0;
+          }
 
         }
       `}</style>
