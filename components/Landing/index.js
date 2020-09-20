@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Card from './Card'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,6 +12,22 @@ import appmeup from './../../assets/img/appmeup-logo.png'
 import koombea from './../../assets/img/koombea-logo.jpg'
 
 const Landing = () => {
+
+  useEffect(() => {
+    let i = 0;
+    let txt = 'Full Stack Developer';
+    let speed = 70;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    typeWriter()
+  }, [])
+
   return (
     <>
       <div className="main">
@@ -19,7 +35,7 @@ const Landing = () => {
           <img className="image-map" src={colombiaImg} alt="colombia map"/>
           <div className="cont-intro">
             <span className="sub-intro">
-              <h2>Full Stack Developer</h2>
+              <h2 id="demo"></h2>
               <span className="main-description-work">I'm based in Barranquilla, Colombia.</span>
               <span className="main-description-work">I have a passion for web development and love to create for web and mobile devices.</span>
               <img src={userImg} className="photo-me" />
@@ -129,6 +145,7 @@ const Landing = () => {
           text-align: center;
         }
         .cont-intro img {
+          object-fit: cover;
           width: 70%;
           margin-top: 2rem;
           border-radius: 50%;
@@ -156,6 +173,7 @@ const Landing = () => {
           border-top: 1px solid #E5E5E5;
         }
         .image-map {
+          object-fit: cover;
           width: 200vw;
           position: absolute;
           right: 0;
@@ -204,6 +222,7 @@ const Landing = () => {
           height: auto;
         }
         .list-companies a img {
+          object-fit: cover;
           width: 70%;
           height: auto;
           padding: 1rem 0;
@@ -287,7 +306,7 @@ const Landing = () => {
           background: #FFF;
           text-align: center;
           border-radius: 0.3rem;
-          cursor: pointer;
+          cursor: default;
         }
         @media screen and (min-width: 600px) {
           .cont-my-skills {
@@ -364,13 +383,17 @@ const Landing = () => {
           }
           .image-map {
             width: 50vw;
-            right: 5rem;
+            right: 5.5rem;
           }
           .cont-info {
             padding: 3% 10%;
           }
           .cont-networks {
             padding: 1.5%;
+          }
+          .list-companies img:hover {
+            transition: all ease .5s;
+            transform: scale(1.2);
           }
         }
       `}</style>

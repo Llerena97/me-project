@@ -39,6 +39,7 @@ const Project = ({project}) => {
           margin-bottom: 1rem;
         }
         .img-project {
+          object-fit: cover;
           width: 100%;
           height: 15rem;
           border-top-left-radius: 1rem;
@@ -100,7 +101,7 @@ const Project = ({project}) => {
         }
         @media screen and (min-width: 600px) {
           .main {
-            width: 30%;
+            width: 42%;
             margin: 0.5rem;
           }
           .main:hover {
@@ -110,10 +111,11 @@ const Project = ({project}) => {
         }
         @media screen and (min-width: 1024px) {
           .main {
+            width: 30%;
             margin: 1rem;
           }
           .img-project {
-            height: 13rem;
+            height: 15rem;
           }
         }
       `}</style>

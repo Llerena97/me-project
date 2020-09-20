@@ -61,7 +61,7 @@ const Header = () => {
         .btn-nav {
           font-family: Nunito;
           font-weight: 700;
-          font-size: 1rem;
+          font-size: 1.1rem;
           color: #000000;
           padding: 0.3rem 1rem;
           border-radius: 1.5rem;
@@ -71,6 +71,7 @@ const Header = () => {
         .btn-nav:hover {
           color: #FFFFFF;
           background: #000000;
+          transition: all ease .5s;
         }
         .cont-desplegable-menu {
           display: flex;
@@ -80,18 +81,17 @@ const Header = () => {
           width: 100%;
           height: auto;
           background: #33d8a2;
-          padding-top: 0.5rem;
-          padding-bottom: 1rem;
+          padding: 1rem 0;
           border-top: 0.5px solid #FAFAFA;
           transition: all ease .2s; 
         }
         .button-normal {
           font-family: Nunito;
           font-weight: 700;
-          font-size: 1rem;
+          font-size: 1.1rem;
           color: #000000;
-          margin-bottom: 0.5rem;
-          padding: 0.5rem 1rem;
+          margin-bottom: 0.8rem;
+          padding: 0.2rem 1rem;
           cursor: pointer;
         }
         .button-normal:hover {
@@ -116,6 +116,7 @@ const Header = () => {
             height: auto;
           }
           .btn-nav {
+            font-size: 1rem;
             padding: 0.3rem 1rem;
           }
           .button-normal {

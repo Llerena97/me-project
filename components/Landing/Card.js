@@ -43,6 +43,7 @@ const Card = ({skill}) => {
           color: #000000;
           margin-top: 1rem;
           text-align: center;
+          cursor: default;
         }
         .content-card {
           font-family: Nunito;
@@ -51,6 +52,7 @@ const Card = ({skill}) => {
           color: #000000;
           margin-top: 1rem;
           text-align: justify;
+          cursor: default;
         }
         .text-stack {
           font-family: Nunito;
@@ -60,6 +62,7 @@ const Card = ({skill}) => {
           margin-top: 1.5rem;
           margin-bottom: 1rem;
           text-align: center;
+          cursor: default;
         }
         .cont-stack {
           width: 100%;
@@ -79,11 +82,16 @@ const Card = ({skill}) => {
           background: #33d8a2;
           text-align: center;
           border-radius: 0.3rem;
-          cursor: pointer;
+          cursor: default;
         }
         @media screen and (min-width: 600px) {
           .main {
             width: 48%;
+            margin-top: 0.5rem;
+          }
+          .main:hover{
+            transition: all ease .5s;
+            transform: translateY(-3%);
           }
         }
         @media screen and (min-width: 1024px) {

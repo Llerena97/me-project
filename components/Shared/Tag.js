@@ -17,7 +17,7 @@ const Tag = ({tag}) => {
           background: #FFF;
           text-align: center;
           border-radius: 0.3rem;
-          cursor: pointer;
+          cursor: default;
         }
       `}</style>
     </>
