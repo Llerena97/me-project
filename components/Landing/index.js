@@ -393,7 +393,7 @@ const Landing = () => {
           }
           .list-companies img:hover {
             transition: all ease .5s;
-            transform: scale(1.2);
+            transform: scale(1.1);
           }
         }
       `}</style>

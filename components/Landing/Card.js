@@ -89,10 +89,6 @@ const Card = ({skill}) => {
             width: 48%;
             margin-top: 0.5rem;
           }
-          .main:hover{
-            transition: all ease .5s;
-            transform: translateY(-3%);
-          }
         }
         @media screen and (min-width: 1024px) {
           .main {
