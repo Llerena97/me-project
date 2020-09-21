@@ -7,6 +7,7 @@ const ProjectsView = () => {
       <div className="main">
         <span className="main-title">My Recent Work</span>
         <span className="main-description">Here are a few development projects I've worked on recently.</span>
+        <span className="main-description">I'm actively working on projects that you can see soon.</span>
         <ListProjects />
       </div>
       <style jsx>{`

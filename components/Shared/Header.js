@@ -39,7 +39,7 @@ const Header = () => {
           justify-content: space-between;
           width: 100%;
           height: auto;
-          background: #33d8a2;
+          background: #00E5FF;
           padding: 1rem 1.5rem;          
         }
         .logo {
@@ -80,7 +80,7 @@ const Header = () => {
           justify-content: space-between;
           width: 100%;
           height: auto;
-          background: #33d8a2;
+          background: #00E5FF;
           padding: 1rem 0;
           border-top: 0.5px solid #FAFAFA;
           transition: all ease .2s; 

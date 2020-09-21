@@ -52,7 +52,7 @@ const Project = ({project}) => {
           justify-content: center;
           width: 100%;
           height: auto;
-          background: #33d8a2;
+          background: #00E5FF;
           padding: 1.2rem 1rem;
           border-bottom-left-radius: 1rem;
           border-bottom-right-radius: 1rem;

@@ -235,7 +235,7 @@ const Landing = () => {
           width: 100%;
           height: auto;
           padding: 3%;
-          background: #33d8a2;
+          background: #00E5FF;
         }
         .cont-networks h4, .cont-my-skills h4 {
           color: #000000;
@@ -261,7 +261,7 @@ const Landing = () => {
           justify-content: center;
           width: 100%;
           height: auto;
-          background: #33d8a2;
+          background: #00E5FF;
           padding: 3%;
         }
         .cont-cards {

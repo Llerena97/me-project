@@ -13,7 +13,7 @@ const Card = ({skill}) => {
         <FontAwesomeIcon
           icon={icon}
           size="3x"
-          style={{color: '#33d8a2'}}
+          style={{color: '#00E5FF'}}
           onClick={() => window.open('https://github.com/Llerena97')}
         />
         <span className="title-card">{info.title}</span>
@@ -58,7 +58,7 @@ const Card = ({skill}) => {
           font-family: Nunito;
           font-size: 1rem;
           font-weight: 600;
-          color: #33d8a2;
+          color: #00E5FF;
           margin-top: 1.5rem;
           margin-bottom: 1rem;
           text-align: center;
@@ -79,7 +79,7 @@ const Card = ({skill}) => {
           color: #000000;
           margin: 0.2rem;
           padding: 0.2rem 0.5rem;
-          background: #33d8a2;
+          background: #00E5FF;
           text-align: center;
           border-radius: 0.3rem;
           cursor: default;
