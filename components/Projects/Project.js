@@ -106,7 +106,7 @@ const Project = ({project}) => {
           }
           .main:hover {
             transition: all ease .5s;
-            transform: translateY(-5%);
+            transform: translateY(-2%);
           }
         }
         @media screen and (min-width: 1024px) {
